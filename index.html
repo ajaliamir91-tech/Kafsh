@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>لاکچری | فروشگاه گردنبند</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#0b0b0d;color:#f7f3ea}
+a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:10;background:rgba(11,11,13,.94);backdrop-filter:blur(12px);border-bottom:1px solid #29292d}
+.navin{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:16px 22px}
+.logo{font-size:28px;font-weight:900;letter-spacing:1px}.logo span{color:#d6b36a}
+.links{display:flex;gap:24px;color:#ccc}.links a:hover{color:#d6b36a}
+.hero{max-width:1100px;margin:auto;padding:75px 22px 55px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.badge{color:#d6b36a;font-size:14px;margin-bottom:15px}.hero h1{font-size:54px;line-height:1.15;margin:0 0 18px}.hero h1 b{color:#d6b36a}.hero p{color:#b9b9bd;line-height:2;font-size:17px}
+.btn{display:inline-block;background:#d6b36a;color:#111;padding:13px 24px;border-radius:12px;font-weight:bold;margin-top:15px}.btn:hover{filter:brightness(1.1)}
+.hero-card{height:360px;border:1px solid #343439;border-radius:28px;background:radial-gradient(circle at 50% 35%,#3b3324,#161518 55%,#0d0d0f);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.chain{width:210px;height:210px;border:8px solid #d6b36a;border-radius:50%;box-shadow:0 0 40px #b08b3e55;position:relative}
+.pendant{position:absolute;width:75px;height:95px;background:linear-gradient(145deg,#f4d993,#a77b2e);left:calc(50% - 37px);top:138px;clip-path:polygon(50% 0,90% 35%,78% 100%,22% 100%,10% 35%);box-shadow:0 8px 25px #000}
+.section{max-width:1100px;margin:auto;padding:30px 22px 70px}.title{text-align:center;margin-bottom:30px}.title h2{font-size:32px;margin:0 0 8px}.title p{color:#999}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#141416;border:1px solid #29292d;border-radius:20px;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#80642e}.pic{height:230px;background:linear-gradient(145deg,#27231d,#111113);display:flex;align-items:center;justify-content:center}.mini-chain{width:125px;height:125px;border:6px solid #d6b36a;border-radius:50%;position:relative}.mini-p{position:absolute;width:45px;height:57px;background:#d6b36a;left:34px;top:82px;clip-path:polygon(50% 0,90% 35%,78% 100%,22% 100%,10% 35%)}
+.info{padding:18px}.info h3{margin:0 0 8px}.price{color:#d6b36a;font-size:18px;font-weight:bold}.buy{width:100%;border:0;background:#292923;color:#f7f3ea;padding:11px;border-radius:10px;margin-top:13px;cursor:pointer}.buy:hover{background:#d6b36a;color:#111}
+.about{background:#111114;border-top:1px solid #222;border-bottom:1px solid #222}.aboutin{max-width:900px;margin:auto;padding:55px 22px;text-align:center}.aboutin p{color:#aaa;line-height:2}
+footer{text-align:center;color:#777;padding:30px}.cart{position:relative}.count{position:absolute;top:-10px;right:-12px;background:#d6b36a;color:#111;width:20px;height:20px;border-radius:50%;font-size:12px;text-align:center;line-height:20px}
+@media(max-width:750px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:45px}.hero h1{font-size:40px}.products{grid-template-columns:1fr}.hero-card{height:300px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="navin">
+<div class="logo">لاکچری <span>◆</span></div>
+<div class="links"><a href="#home">خانه</a><a href="#products">گردنبندها</a><a href="#about">درباره ما</a><a href="#contact">تماس</a></div>
+<div class="cart">🛒 <span class="count" id="count">0</span></div>
+</div></nav>
+
+<main id="home">
+<section class="hero">
+<div><div class="badge">LUXURY JEWELRY</div><h1>درخشش تو،<br><b>انتخاب تو</b></h1><p>مجموعه‌ای از گردنبندهای شیک و خاص برای کسانی که به جزئیات اهمیت می‌دهند.</p><a class="btn" href="#products">مشاهده محصولات</a></div>
+<div class="hero-card"><div class="chain"><div class="pendant"></div></div></div>
+</section>
+
+<section class="section" id="products"><div class="title"><h2>محصولات ویژه</h2><p>چند انتخاب از مجموعه لاکچری</p></div>
+<div class="products">
+<div class="card"><div class="pic"><div class="mini-chain"><div class="mini-p"></div></div></div><div class="info"><h3>گردنبند الماس</h3><div class="price">۲٬۴۹۰٬۰۰۰ تومان</div><button class="buy" onclick="add()">افزودن به سبد</button></div></div>
+<div class="card"><div class="pic"><div class="mini-chain"><div class="mini-p"></div></div></div><div class="info"><h3>گردنبند کلاسیک</h3><div class="price">۱٬۸۹۰٬۰۰۰ تومان</div><button class="buy" onclick="add()">افزودن به سبد</button></div></div>
+<div class="card"><div class="pic"><div class="mini-chain"><div class="mini-p"></div></div></div><div class="info"><h3>گردنبند سلطنتی</h3><div class="price">۳٬۲۹۰٬۰۰۰ تومان</div><button class="buy" onclick="add()">افزودن به سبد</button></div></div>
+</div></section>
+
+<section class="about" id="about"><div class="aboutin"><h2>درباره لاکچری</h2><p>لاکچری با تمرکز روی طراحی‌های خاص و ظاهر شیک، مجموعه‌ای از گردنبندها را برای استفاده روزمره و هدیه ارائه می‌کند.</p></div></section>
+</main>
+<footer id="contact">© ۱۴۰۵ لاکچری — تمامی حقوق محفوظ است</footer>
+<script>
+let n=0;function add(){n++;document.getElementById('count').textContent=n;alert('محصول به سبد خرید اضافه شد ✨')}
+</script>
+</body>
+</html>
